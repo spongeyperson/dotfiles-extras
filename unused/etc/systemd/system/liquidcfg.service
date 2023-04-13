@@ -1,0 +1,11 @@
+[Unit]
+Description=Liquidctl AIO startup service
+
+[Service]
+Type=oneshot
+ExecStart=liquidctl initialize all
+ExecStart=liquidctl --match kraken set pump speed 100
+ExecStart=liquidctl --match kraken set fan speed  20 30  30 40  35 45  40 55  42 58  43 75  44 80  45 90  46 92  50 100
+
+[Install]
+WantedBy=default.target

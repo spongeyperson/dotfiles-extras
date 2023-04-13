@@ -1,0 +1,36 @@
+<!--
+This Domain is an Example of 12 Cores, 24 Threads with the STARTING host core being 12 and sequentially going from there. Host Cores 0-11 and Host Threads 24-35 being avaliable to the host.
+-->
+<domain type='kvm'>
+  <!-- Other domain elements -->
+  <vcpu placement='static'>24</vcpu>
+  <cpu mode='host-passthrough'>
+    <topology sockets='1' cores='12' threads='2'/>
+  </cpu>
+  <cputune>
+    <vcpupin vcpu='0' cpuset='0'/>
+    <vcpupin vcpu='1' cpuset='24'/>
+    <vcpupin vcpu='2' cpuset='1'/>
+    <vcpupin vcpu='3' cpuset='25'/>
+    <vcpupin vcpu='4' cpuset='2'/>
+    <vcpupin vcpu='5' cpuset='26'/>
+    <vcpupin vcpu='6' cpuset='3'/>
+    <vcpupin vcpu='7' cpuset='27'/>
+    <vcpupin vcpu='8' cpuset='4'/>
+    <vcpupin vcpu='9' cpuset='28'/>
+    <vcpupin vcpu='10' cpuset='5'/>
+    <vcpupin vcpu='11' cpuset='29'/>
+    <vcpupin vcpu='12' cpuset='6'/>
+    <vcpupin vcpu='13' cpuset='30'/>
+    <vcpupin vcpu='14' cpuset='7'/>
+    <vcpupin vcpu='15' cpuset='31'/>
+    <vcpupin vcpu='16' cpuset='8'/>
+    <vcpupin vcpu='17' cpuset='32'/>
+    <vcpupin vcpu='18' cpuset='9'/>
+    <vcpupin vcpu='19' cpuset='33'/>
+    <vcpupin vcpu='20' cpuset='10'/>
+    <vcpupin vcpu='21' cpuset='34'/>
+    <vcpupin vcpu='22' cpuset='11'/>
+    <vcpupin vcpu='23' cpuset='35'/>
+  </cputune>
+</domain>
