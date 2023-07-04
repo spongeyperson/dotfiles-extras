@@ -13,23 +13,48 @@
 ## Table of Contents:
 - **[KDE Specific](#kde-specific-issues)**
     - [Removable Media (File Transfer) Speed is Incorrect](#removable-media-file-transfer-speed-is-incorrect)
-- **General Linux Bugs / Work Arounds:**
-    - [Faillock](#commonly-used-steam-launch-arguments)
-- []
+- **[General Linux Bugs / Work Arounds:](#general-linux-bugs--work-arounds)**
+    - [Faillock](#faillock-locks-you-out-without-telling-you-sudo-issue)
 
 ## KDE Specific Issues: 
   - ### Removable Media (File Transfer) Speed is Incorrect
-    - How to fix:<br></br>
+    - Description:
+      - KDE Plasma's File Copy Handler (KIO) *sometimes* has an issue which has yet to be patched (at the time of writing this) where files copied from your local disk to a removable medium, doesn't estimate correctly, and KIO will just state the file has copied nearly instantly (or at your local disk's actual speed) and the copy dialogue will disappear like the file has copied instantanously, but in reality, your removable drive is still busy writing those changes to disk. This fix adds a buffer cache to your disk and prevents KIO from getting ahead of itself.
+      <br></br>
+      You can test if this issue applies to you by copying a large file to a removable medium like a USB Flash Drive and then trying to safely remove the flash drive on your panel. If it states file transfers are still running, you have this issue.  
+    - How to fix:
       1) Create the following file: `/etc/udev/rules.d/50-removable-cache.rules`
       2) Then add the below line:
       ```sh
       ACTION=="add|change", KERNEL=="sd[a-z]", ATTR{removable}=="1", ATTR{bdi/max_ratio}="5"
       ```
-      **OR**<br></br>
-      1)
-
-
-
+      **OR**<br>
+      1) Clone the following repo: 
+      ```sh
+      git clone https://github.com/spongeyperson/arch-dotfiles.git
+      ```
+      2) Copy contents to intended location:
+      ```
+      cp -v arch-dotfiles/etc/udev/rules.d/50-removable-cache.rules /etc/udev/rules.d/50-removable-cache.rules
+      ```
+      <br>
+## General Linux Bugs / Work Arounds: 
+  - ### Faillock Locks you out without telling you (`sudo` issue)
+    - <b><u>Description:</b></u>
+      - Linux PAM (Pluggable Authentication Module\[s]) has a function called `Faillock`(`pam_faillock.so`) which is triggered when a user tries to log in with bad authentication too many times.
+    - <b><i><u>The issue:</u></i></b>
+      - `sudo` doesn't notify the user that `Faillock` condition has been met, and therefore acts like you keep typing the incorrect password over and over again, dispite the <i>correct</i> password being inputted.
+    - <b><u>The fix(es)</b></u>
+      - The fix involves basically delaying the problem and adding more retry time, or replacing `sudo` with BSD's `doas`. 
+      - <b><u>Fix 1: Delaying the issue</u></b>
+        1) Create the following file: `/etc/udev/rules.d/50-removable-cache.rules`
+        2) Then add the below line:
+        ```sh
+        ACTION=="add|change", KERNEL=="sd[a-z]", ATTR{removable}=="1", ATTR{bdi/max_ratio}="5"
+        ```
+      - <b><u>Fix 2: Switching to `doas`</u></b>
+        1) Remove `sudo`
+        2) install `doas`
 <!--
 ## Commonly Used Steam Launch Arguments:
 
