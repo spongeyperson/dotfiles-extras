@@ -1,3 +1,5 @@
+#### <p align=center> <a href="https://github.com/spongeyperson/spongeyperson/docs/global-index.md" title="Return to Spongey's Global Index. This Index links you back to all *active* repositories i'm working on.">🡐 /spongeyperson/spongeyperson/global-index.md</a>
+
 # <p align=center>(WIP) Valve Steam Deck - Game Settings
 ###### <p align=center> 
 

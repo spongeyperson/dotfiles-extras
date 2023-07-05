@@ -1,3 +1,5 @@
+#### <p align=center> <a href="https://github.com/spongeyperson/spongeyperson/docs/global-index.md" title="Return to Spongey's Global Index. This Index links you back to all *active* repositories i'm working on.">🡐 /spongeyperson/spongeyperson/global-index.md</a>
+
 # <p align=center>(WIP) ASUS Zenith II Extreme on Linux:
 
 <p align=center><img src="https://user-images.githubusercontent.com/28176188/192165558-8c3d0dd8-c908-46a7-9e4a-c8771dd98a99.png" width="400">
