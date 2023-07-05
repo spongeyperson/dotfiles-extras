@@ -1,3 +1,5 @@
+#### <p align=center> <a href="https://github.com/spongeyperson/spongeyperson/blob/main/docs/global-index.md" title="Return to Spongey's Global Index. This Index links you back to all *active* repositories i'm working on.">🡐 /spongeyperson/spongeyperson/global-index.md</a>
+
 <div id="user-content-toc">
   <ul>
     <summary align="center"><h1 style="display: inline-block; text-decoration: none;">Spongey's Personal Settings for Steam:</h1></summary>

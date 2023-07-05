@@ -1,3 +1,5 @@
+#### <p align=center> <a href="https://github.com/spongeyperson/spongeyperson/blob/main/docs/global-index.md" title="Return to Spongey's Global Index. This Index links you back to all *active* repositories i'm working on.">🡐 /spongeyperson/spongeyperson/global-index.md</a>
+
 # <p align=center>(WIP) PRIME Render Offload Settings:
 ###### <p align=center> The following page is currently <i>semi</i> biased towards <u>my current hardware</u>. This page is being used as Internal notes to write the proper Prime Offload settings page for general purpose systems. In the meantime, this page, and the newly rewritten [ROG G15 Advantage](docs/Hardware&#32;Specific&#32;Fixes&#32;&#32;Settings/ROG-G15-Settings.md) page will not be visible on the main [README.md](https://github.com/spongeyperson/arch-dotfiles/blob/master/README.md) due to this.
 

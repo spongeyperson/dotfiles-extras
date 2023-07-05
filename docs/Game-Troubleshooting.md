@@ -1,3 +1,5 @@
+#### <p align=center> <a href="https://github.com/spongeyperson/spongeyperson/blob/main/docs/global-index.md" title="Return to Spongey's Global Index. This Index links you back to all *active* repositories i'm working on.">🡐 /spongeyperson/spongeyperson/global-index.md</a>
+
 # <p align=center>General Wine Game Troubleshooting: </p>
 ###### <p align=center> A Generalized list of common issues and troubleshooting steps to do with Wine gaming under Linux.<br>(A Guide for the Linux Noobie)</br></p>
 <br></br>
