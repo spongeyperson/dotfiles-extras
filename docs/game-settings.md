@@ -327,20 +327,20 @@ MESA_GL_VERSION_OVERRIDE=4.4COMPAT __GL_SHADER_DISK_CACHE=1 VK_ICD_FILENAMES=/us
 - #### Wine / Proton Info:
   - Working Status: `Working`
   - Initial Test Version: `GE-Proton7-17`
-  - Last Known Working: `GE-Proton7-17`
+  - Last Known Working: `GE-Proton9-11`
 - **Steam Launch Arguments:**
   ```bash
-  VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.x86_64.json RADV_PERFTEST=aco gamemoderun mangohud %command%
+  VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.x86_64.json RADV_PERFTEST=gpl,aco mangohud %command%
   ```
 
 ## Cult of the Lamb:
 - #### Wine / Proton Info:
   - Working Status: `Working`
   - Initial Test Version: `Proton-7.0rc6-GE-1`
-  - Last Known Working: `GE-Proton7-38`
+  - Last Known Working: `GE-Proton9-2`
 - **Steam Launch Arguments:**
   ```bash
-  VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.x86_64.json RADV_PERFTEST=aco gamemoderun mangohud %command%
+  VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.x86_64.json RADV_PERFTEST=gpl,aco gamemoderun mangohud %command%
   ```
 - ### Fixes:
   - #### [Stuttering / Frame-Pacing Issues](https://www.reddit.com/r/SteamDeck/comments/x4cau0/cult_of_the_lamb_micro_stutter_fix/):

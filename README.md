@@ -6,6 +6,7 @@
 
 <li><b>Original Repos</b>:</li>
   <ul>
+    <li><b>NixOS</b>: <a href="https://github.com/spongeyperson/nixos-dotfiles/">spongeyperson/nixos-dotfiles</a></li>
     <li><b>Arch</b>: <a href="https://github.com/spongeyperson/arch-dotfiles/">spongeyperson/arch-dotfiles</a></li>
     <li><b>Fedora</b>: <a href="https://github.com/spongeyperson/fedora-dotfiles/">spongeyperson/fedora-dotfiles</a></li>
     <li><b>Proxmox</b>: <a href="https://github.com/spongeyperson/proxmox-config/">spongeyperson/proxmox-config</a></li>
